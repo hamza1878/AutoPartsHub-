@@ -4,19 +4,19 @@ import { motion } from 'framer-motion';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
+// List of brands
 const brands = [
-  { src: '/polo.png', alt: 'polo.png' },
-  { src: '/calvin.jpeg', alt: 'calvin.png' },
-  { src: '/chanel.png', alt: 'chanel.png' },
-  { src: '/zara.png', alt: 'zara.png' },
-  { src: '/calvin.jpeg', alt: 'calvin.png' },
-  { src: '/chanel.png', alt: 'chanel.png' },
-  { src: '/zara.png', alt: 'zara.png' },
-  { src: '/chanel.png', alt: 'chanel.png' },
-  { src: '/zara.png', alt: 'zara.png' },
-  { src: '/Dior.png', alt: 'Dior.png' }
+  { src: '/bmw.png', alt: 'bmw.png' },
+  { src: '/bugatti.png', alt: 'bugatti.png' },
+  { src: '/ford.png', alt: 'ford.png' },
+  { src: '/lambr.png', alt: 'lambr.png' },
+  { src: '/hd.png', alt: 'hd.png' },
+  { src: '/mercedes.png', alt: 'mercedes.png' },
+  { src: '/pg.png', alt: 'pg.png' },
+  { src: '/volkswagen.png', alt: 'volkswagen.png' },
 ];
 
+// Carousel responsiveness settings
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
@@ -37,39 +37,38 @@ const responsive = {
 
 const Brand = () => {
   return (
-    <div className="px-4 md:px-8 lg:px-12 bg-[#feccec] py-8">
+    <div className="px-4 space-y-16 md:px-16 lg:px-12 bg-[#e7e7e7] py-8">
       <Carousel
         swipeable={true}
         draggable={true}
         responsive={responsive}
-        showDots={true}
         infinite={true}
         autoPlay={true}
         autoPlaySpeed={3000}
         keyBoardControl={true}
-        customTransition="all 0.5s"
-        transitionDuration={500}
-        containerClass="carousel-container"
+        customTransition=" 0.5s"
         removeArrowOnDeviceType={["tablet", "mobile"]}
-        deviceType={"desktop"}
-        dotListClass="custom-dot-list-style"
-        itemClass="carousel-item-padding-40-px"
+      
       >
-        {brands.map((brand, index) => (
-          <motion.div 
-            key={index}
-            className="flex justify-center px-2"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: index * 0.1 }}
-          >
-            <img
-              src={brand.src}
-              alt={brand.alt}
-              className="rounded-xl max-w-32 h-auto"
-            />
-          </motion.div>
-        ))}
+        {brands.map((brand, index) => {
+          const randomX = Math.random() * 50 - 25; 
+          const randomY = Math.random() * 50 - 25;
+
+          return (
+            <motion.div
+              key={index}
+              className="flex justify-center px-2"
+              initial={{ opacity: 0, x: randomX, y: randomY }} 
+              animate={{ opacity: 1, x: 0, y: 0 }} 
+            >
+              <img
+                src={brand.src}
+                alt={brand.alt}
+                className="rounded-xl max-w-32 h-auto"
+              />
+            </motion.div>
+          );
+        })}
       </Carousel>
     </div>
   );

@@ -1,36 +1,42 @@
 const products = [
-    {
-      id: 1,
-      name: 'Basic Tee',
-      href: '#',
-      imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg',
-      imageAlt: "Front of men's Basic Tee in black.",
-      price: '$35',
-      color: 'Black',
-    },
-    {
-        id: 1,
-        name: 'Basic Tee',
-        href: '#',
-        imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg',
-        imageAlt: "Front of men's Basic Tee in black.",
-        price: '$35',
-        color: 'Black',
-      },
-      {
-        id: 1,
-        name: 'Basic Tee',
-        href: '#',
-        imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg',
-        imageAlt: "Front of men's Basic Tee in black.",
-        price: '$35',
-        color: 'Black',
-      },
+  {
+    id: 1,
+    name: 'SpeedTrack',
+    href: '#',
+    badge: "New",
+
+    imageSrc: '/SpeedTrack.png',
+    imageAlt: "SpeedTrack.",
+    price: '$35',
+    desc: 'SpeedTrack GPS Tracker – Tracker GPS pour véhicules',
+  },
+  {
+    id: 2,
+    name: 'diagnostic',
+    href: '#',
+    badge: "New",
+
+    imageSrc: 'diagnostic.png',
+    imageAlt: "diagnostic tool DriveSafe OBD2 Scanner.",
+    price: '$120',
+    desc: 'diagnostic tool DriveSafe OBD2 Scanner',
+  },
+  {
+    id: 3,
+    name: 'CoolFlow',
+    badge: "New",
+
+    href: '#',
+    imageSrc: 'CoolFlow.png',
+    imageAlt: "CoolFlow Radiator – Radiateur haute performance pour refroidissement optimal.",
+    price: '$35',
+    desc: 'CoolFlow Radiator – Radiateur haute performance pour refroidissement optimal',
+  },
   ]
   
   export default function TOP_SELLING() {
     return (
-      <div className="bg-[#feccec]">
+      <div className="bg-[#e7e7e7]">
         <div className="mx-auto max-w-2xl px-4  sm:px-6  lg:max-w-7xl lg:px-8">
          
           <h2 className="text-4xl font-bold tracking-tight text-gray-900 text-center">

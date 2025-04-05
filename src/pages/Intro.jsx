@@ -1,23 +1,22 @@
 import React from "react";
 const Intro = () => {
   return (
-    <div className="bg-[#feccec] w-full h-full shadow-lg flex items-center  ">
+    <div className="bg-[#e7e7e7] w-full h-full shadow-lg flex items-center  ">
       <section className=" p-32 w-2/3 space-y-6">
         <h1 className="text-6xl font-serif">
           {" "}
-          FIND CLOTHES THAT MATCHES YOUR STYLE GIVE
+          Find Mechanical Parts That Match Your Needs
+
+
         </h1>
         <h1>
-          Your style is a reflection of your personality. To find clothes that
-          truly suit you, explore different inspirations, understand your
-          preferences, and choose pieces that make you feel confident and
-          comfortable. Let your wardrobe express who you are!
+        Your equipment's performance is a reflection of the quality of its parts. To find the right mechanical parts for your machinery, explore different models, understand your specifications, and choose components that ensure efficiency and durability. Let your machinery perform at its best with parts that suit your needs!
         </h1>
         <div className=" flex items-center text-centre">
           {" "}
-          <button className="py-8 left-32 bg-[#ffa8df] p-2 w-48 rounded-[40%] hover:outline-none hover:ring-2 hover:ring-[#fe68c3] ">
+          {/* <button className="py-8 left-32 bg-[#ffa8df] p-2 w-48 rounded-[40%] hover:outline-none hover:ring-2 hover:ring-[#fe68c3] ">
             GET START
-          </button>
+          </button> */}
         </div>
         <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
           <div className="mx-auto flex max-w-xs flex-col gap-y-4">
@@ -40,8 +39,8 @@ const Intro = () => {
           </div>
         </dl>
       </section>
-      <nav className="p-2 ">
-        <img src='/img1.png' alt="Shop.png" className="pl-24  rounded-lg" />
+      <nav className="pr-6 ">
+        <img src='/find.png' alt="find.png" className="pl-24  rounded-2xl" />
       </nav>
     </div>
   );

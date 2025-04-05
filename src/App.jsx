@@ -5,17 +5,25 @@ import Intro from './pages/Intro'
 import ProductCarousel from './pages/Product'
 import NewProductCarousel from './pages/New_Product'
 import TOP_SELLING from './pages/TOP_SELLING'
-import DressStyleGrid from './pages/BROWSER_BY_DRESS_STYLE'
+import ServiceGrid from './pages/ServiceGrid'
+import Login from './auth/login'
+import SignUp from './auth/SignUp'
+
+
 function App() {
 
   return (
     <div className=' w-full'>
-    <Navbar/>
+    {/* <Navbar/>
     <Intro/>
     <Brand/>
 <NewProductCarousel/>
 <TOP_SELLING/>
-<DressStyleGrid/>
+<ServiceGrid/> */}
+<Login/>
+
+<SignUp/>
+
     {/* <ProductCarousel/> */}
     </div>
   )

@@ -34,46 +34,46 @@ import { Star, ShoppingCart, Eye, Heart } from "lucide-react";
 const products = [
   {
     id: 1,
-    name: 'Basic Tee',
+    name: 'SpeedTrack',
     href: '#',
     badge: "New",
 
-    imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg',
-    imageAlt: "Front of men's Basic Tee in black.",
+    imageSrc: '/SpeedTrack.png',
+    imageAlt: "SpeedTrack.",
     price: '$35',
-    color: 'Black',
+    desc: 'SpeedTrack GPS Tracker – Tracker GPS pour véhicules',
   },
   {
-    id: 1,
-    name: 'Basic Tee',
+    id: 2,
+    name: 'diagnostic',
     href: '#',
     badge: "New",
 
-    imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg',
-    imageAlt: "Front of men's Basic Tee in black.",
-    price: '$35',
-    color: 'Black',
+    imageSrc: 'diagnostic.png',
+    imageAlt: "diagnostic tool DriveSafe OBD2 Scanner.",
+    price: '$120',
+    desc: 'diagnostic tool DriveSafe OBD2 Scanner',
   },
   {
-    id: 1,
-    name: 'Basic Tee',
+    id: 3,
+    name: 'CoolFlow',
     badge: "New",
 
     href: '#',
-    imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg',
-    imageAlt: "Front of men's Basic Tee in black.",
+    imageSrc: 'CoolFlow.png',
+    imageAlt: "CoolFlow Radiator – Radiateur haute performance pour refroidissement optimal.",
     price: '$35',
-    color: 'Black',
+    desc: 'CoolFlow Radiator – Radiateur haute performance pour refroidissement optimal',
   },  {
-    id: 1,
-    name: 'Basic Tee',
+    id: 4,
+    name: 'Front of mens Basic Tee in black.',
     href: '#',
     badge: "New",
 
-    imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg',
-    imageAlt: "Front of men's Basic Tee in black.",
-    price: '$35',
-    color: 'Black',
+    imageSrc: 'WinterDrive.png',
+    imageAlt: "WinterDrive 360 – Pneus hiver pour conduite en toute sécurité.",
+    price: '$144',
+    desc: 'WinterDrive 360 – Pneus hiver pour conduite en toute sécurité',
   },
   
  
@@ -81,7 +81,7 @@ const products = [
 ]
 export default function NewProductCarousel() {
   return (
-        <div className="  bg-[#feccec]  ">
+        <div className="  bg-[#e7e7e7]  ">
      <div className="flex pt-6 justify-center">
   <h2 className="text-4xl font-bold tracking-tight text-gray-900 text-center">
     New Arrivals
@@ -101,7 +101,7 @@ export default function NewProductCarousel() {
                   <img
                     alt={product.imageAlt}
                     src={product.imageSrc}
-                    className="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80"
+                    className="aspect-square w-full p-2 rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80"
                   />
                   <div className="mt-4 flex justify-between">
                     <div>
@@ -111,7 +111,7 @@ export default function NewProductCarousel() {
                           {product.name}
                         </a>
                       </h3>
-                      <p className="mt-1 text-sm text-gray-500">{product.color}</p>
+                      <p className="mt-1 text-sm text-gray-500">{product.desc}</p>
                     </div>
                     <p className="text-sm font-medium text-gray-900">{product.price}</p>
                   </div>
@@ -131,8 +131,8 @@ export default function NewProductCarousel() {
              
             </div>
             <div className="flex py-12 justify-center">
-              <button className="justify-center w-32  border-4 border-[#feccec]  rounded-xl shadow-md hover:scale-150 transition-transform duration-700 " >
-              <p className="text-2xl bg-[#feccec] shadow-xl ">View All</p>
+              <button className="justify-center w-32  border-4 border-[#e7e7e7]  rounded-xl shadow-md hover:scale-150 transition-transform duration-700 " >
+              <p className="text-2xl bg-[#e7e7e7] shadow-xl ">View All</p>
               </button>
 
               </div>
