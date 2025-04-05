@@ -38,7 +38,6 @@ const Navbar = () => {
 </div>
 
 
-
           <div className="relative">
             <input
               type="text"
