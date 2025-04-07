@@ -7,7 +7,9 @@ const Navbar = () => {
           <div className="flex items-center space-x-4">
           <img src={'/logo.png'} alt="Shop.png" className='max-w-12 rounded-lg' />
             <span className="text-[#3d3d3d] text-4xl font-bold">
-            E-SHOP-TN</span>
+            
+-Pièce.Express-
+</span>
           </div>
 
           <div className="text-xl space-x-6">
