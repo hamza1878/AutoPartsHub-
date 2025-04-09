@@ -13,14 +13,14 @@ function App() {
 
   return (
     <div className=' w-full'>
-      <CarPartsShop />
-    {/* <Navbar/>
+      {/* <CarPartsShop /> */}
+   <Navbar/>
     <Intro/>
     <Brand/>
 <NewProductCarousel/>
 <TOP_SELLING/>
-<ServiceGrid/>  */}
-{/* <Login/>
+<ServiceGrid/>  
+ {/*<Login/>
 
 <SignUp/> */}
 
