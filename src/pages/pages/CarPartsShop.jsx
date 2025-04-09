@@ -17,7 +17,7 @@ const CarPartsShop = () => {
 
   const parts = [
     { id: 1, name: "Plaquettes de frein", price: 49.99, category: "Freinage", brand: "Peugeot", image: BMW1},
-    { id: 2, name: "Filtre à air", price: 19.99, category: "Moteur", brand: "Renault", image: BMW1},
+    { id: 2, name: "Filtre à air", price: 20.99, category: "Moteur", brand: "Renault", image: BMW1},
     { id: 3, name: "Batterie 12V", price: 99.99, category: "Électricité", brand: "BMW", image: BMW1},
     { id: 4, name: "Amortisseur arrière", price: 120.0, category: "Suspension", brand: "Peugeot", image: BMW1},
   ];
